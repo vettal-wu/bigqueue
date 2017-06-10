@@ -43,10 +43,10 @@ public interface IFanOutQueue extends Closeable {
 	 * @throws IOException exception throws if there is any IO error during enqueue operation.
 	 */
 	public long enqueue(byte[] data)  throws IOException;
-	
+
 	/**
 	 * Retrieves and removes the front of a fan out queue
-	 * 
+	 *
 	 * @param fanoutId the fanout identifier
 	 * @return data at the front of a queue
 	 * @throws IOException exception throws if there is any IO error during dequeue operation.
